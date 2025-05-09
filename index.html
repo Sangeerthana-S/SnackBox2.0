@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ganesan Loop</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b1afaf;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .loop-container {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .loop-text {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: loopAnimation 4s linear infinite;
+    }
+
+    @keyframes loopAnimation {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+  </style>
+</head>
+<body>
+  <div class="loop-container">
+    <span class="loop-text">Ganesan Ganesan Ganesan Ganesan Ganesan Ganesan </span>
+  </div>
+</body>
+</html>
